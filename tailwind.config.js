@@ -11,7 +11,8 @@ module.exports = {
         }
       },
       outline: {
-        white: '2px solid #a78bfa',
+        main: '3px solid #a78bfa',
+        light: '2px solid #a78bfa'
       },
       backgroundImage: {
         'purp': "url('/img-blurred.jpg')"

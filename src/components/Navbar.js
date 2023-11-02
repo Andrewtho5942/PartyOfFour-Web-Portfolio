@@ -9,7 +9,7 @@ export default function Navbar() {
           <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <a className="title-font font-medium mb-4 md:mb-0">
               
-              <a href="#about" className="ml-3 text-xl font-semibold text-white">
+              <a href="#about" className="ml-3 text-xl font-semibold text-highlight">
                 CGT270 - Party of Four
               </a>
             </a>
@@ -18,7 +18,7 @@ export default function Navbar() {
                 Process
               </a>
               <a href="#insights" className="mr-5 hover:text-white">
-                Insight
+                Insights
               </a>
               <a href="#conclusion" className="mr-5 hover:text-white">
                 Conclusion

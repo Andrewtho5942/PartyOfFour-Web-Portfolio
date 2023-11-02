@@ -19,7 +19,7 @@ return (
         </div>
         <div className="flex flex-wrap -m-4">
           <img 
-            className="outline-white h-96 w-192 mx-auto rounded-2xl"
+            className="outline-main h-96 w-192 mx-auto rounded-2xl"
             src="/LowestCourses.png"
           />
         </div>
@@ -31,16 +31,16 @@ return (
 
         <div className="flex flex-wrap -m-4">
           <img 
-            className="outline-white h-96 w-192 mx-auto rounded-2xl"
+            className="outline-main h-96 w-192 mx-auto rounded-2xl"
             src="/LowestSubjects.png"
           />
           <img 
-            className="outline-white h-96 w-192 mx-auto rounded-2xl"
+            className="outline-main h-96 w-192 mx-auto rounded-2xl"
             src="/HighestSubjects.png"
           />
         </div>
         <div className="mt-8 lg:w-2/3 mx-auto mb-20">
-            These bar charts compare the top 10 subjects with the highest GPA and the bottom 10 subjects with the lowest GPA.
+            These bar charts compare the top 10 subjects (with 200 or more sections) with the highest GPA and the bottom 10 subjects with the lowest GPA.
             Math is the subject with the lowest average GPA of 2.56, with a 0.24 gap between it and second place, Band. The two
              outliers with the highest GPA are Pharmacy and Nursing, which each have an average GPA of 3.69 and 3.72, respectively.
              These two subjects are also separated by a relatively large gap of 0.25 from third place, Aviation Technology.
