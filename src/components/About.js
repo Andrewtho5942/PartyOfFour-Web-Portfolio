@@ -18,7 +18,7 @@ return (
           </div>
         
           <div className="flex justify-center bg-gray-800 opacity-80 p-4 rounded-xl text-white">
-          &nbsp;&nbsp;&nbsp;&nbsp;Our group's goal is to analyze the distribution of Purdue's GPA across courses, subjects, academic terms, and professors to help Purdue 
+          &nbsp;&nbsp;&nbsp;&nbsp;Our goal is to analyze the distribution of Purdue's GPA across courses, subjects, academic terms, and professors to help Purdue 
             faculty and students better understand the difficulty and requirements of the many academic paths of the university. <br />
             &nbsp;&nbsp;&nbsp;&nbsp;This portfolio will show our group's many visualizations, insights, and our methods through the entire data visualization process.
           </div>

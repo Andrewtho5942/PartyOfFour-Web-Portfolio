@@ -10,6 +10,9 @@ module.exports = {
             light: '#ddd6fe'
         }
       },
+      outline: {
+        white: '2px solid #a78bfa',
+      },
       backgroundImage: {
         'purp': "url('/img-blurred.jpg')"
       },
