@@ -1,21 +1,22 @@
 import React from "react";
 
 import About from "./components/About";
-import Contact from "./components/Contact"
+
 import Navbar from "./components/Navbar"
-import Projects from "./components/Projects"
-import Skills from "./components/Skills"
-import Testimonials from "./components/Testimonials"
+import Process from "./components/Process"
+import Insights from "./components/Insights"
+import Conclusion from "./components/Conclusion"
 
 export default function App() {
   return (
-    <main className="text-gray-400 bg-gray-900 body-font">
+    <main class = "bg-purp text-white">
       <Navbar />
       <About />
-      <Projects />
-      <Skills />
-      <Testimonials />
-      <Contact />
+      <Process />
+      <div className="h-20"> 
+      </div>
+      <Insights />
+      <Conclusion />
     </main>
   );
 }

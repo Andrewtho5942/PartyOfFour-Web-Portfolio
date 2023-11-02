@@ -1,8 +1,19 @@
+
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend:{
+      colors:{
+        help: {
+            DEFAULT: '#a78bfa'
+        }
+      },
+      backgroundImage: {
+        'purp': "url('/img-blurred.jpg')"
+      },
+    }
+    
   },
   variants: {
     extend: {},
