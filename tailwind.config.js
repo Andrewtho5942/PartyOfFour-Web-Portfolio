@@ -7,15 +7,17 @@ module.exports = {
       colors:{
         highlight: {
             DEFAULT: '#a78bfa',
-            light: '#ddd6fe'
+            light: '#ddd6fe',
+            dark: '#8b5cf6'
         }
       },
       outline: {
         main: '3px solid #a78bfa',
         light: '2px solid #a78bfa'
+        
       },
       backgroundImage: {
-        'purp': "url('/img-blurred.jpg')"
+        'purp': "url('/bg-darkened.png')"
       },
     }
     

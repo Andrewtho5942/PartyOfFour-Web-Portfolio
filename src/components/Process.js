@@ -90,7 +90,7 @@ return (
           the grade distribution to get an average GPA for each course. We then created multiple pivot
           tables to sum every section across each course and subject, as well as match up each professor
           with every class he or she teaches. These pivot tables were then used in the following stages of
-          visualization process.
+          the visualization process.
         </p>
         <img 
             className="lg:w-1/2 mt-4 mx-auto outline-light rounded-lg"
