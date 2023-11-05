@@ -6,7 +6,7 @@ export default function About() {
 return (
 <section id="about">
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow md:w-2/3 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <div className="lg:w-full md:w-2/3 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <div className= "bg-gray-800 opacity-80 p-4 pb-0 mb-4 rounded-xl w-full text-center">
             <h1 className="title-font text-5xl mb-4 font-bold text-highlight">
             An Analysis of Purdue's GPA
@@ -23,9 +23,9 @@ return (
             &nbsp;&nbsp;&nbsp;&nbsp;This portfolio will show our group's many visualizations, insights, and our methods through the entire data visualization process.
           </div>
         </div>
-        <div className="rounded-3xl overflow-hidden lg:w-81  md:w-1/2 w-5/6 " >
+        <div className="rounded-3xl overflow-hidden lg:w-7/12  md:w-1/2 w-5/6 " >
           <img
-            className="object-cover object-center rounded"
+            className="object-cover object-center rounded w-full"
             alt="visualization"
             src="./visualization_example.png"
           />

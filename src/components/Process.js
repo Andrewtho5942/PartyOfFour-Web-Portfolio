@@ -1,8 +1,6 @@
 import { ClipboardListIcon } from "@heroicons/react/solid";
 import { ArrowNarrowDownIcon } from "@heroicons/react/solid";
 import React from "react";
-import { projects } from "../data";
-
 
 export default function Process() {
 return (
@@ -10,7 +8,7 @@ return (
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-10">
           <ClipboardListIcon className="mx-auto inline-block w-10 mb-4" />
-          <h1 className="sm:text-4xl text-3xl font-medium title-font font-semibold mb-4 text-highlight">
+          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-highlight">
             Our Data Visualization Process
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
@@ -22,6 +20,7 @@ return (
           <img 
             className="w-12 h-8"
             src="/Acquire.png"
+            alt=""
           /> 
           <h1 className="ml-2 text-2xl font-semibold text-highlight">
             Acquire
@@ -35,6 +34,7 @@ return (
         <img 
             className="lg:w-2/3 mt-4 mx-auto outline-light rounded-lg"
             src="/acquire-inverted.png"
+            alt="Original acquired data"
           /> 
         <ArrowNarrowDownIcon  className="mx-auto w-10 mt-2"/>
 
@@ -42,6 +42,7 @@ return (
           <img 
             className="w-8 h-7"
             src="/Parse.png"
+            alt=""
           /> 
           <h1 className="ml-2 text-2xl font-semibold text-highlight">
             Parse
@@ -55,12 +56,14 @@ return (
         <img 
             className="lg:w-2/3 mt-4 mx-auto outline-light rounded-lg"
             src="/ParseInverted.png"
+            alt="Parsed data"
           /> 
         <ArrowNarrowDownIcon  className="mx-auto w-10 mt-2"/>
         <div className="flex justify-center mt-6">
           <img 
             className="w-6 h-8"
             src="/Filter.png"
+            alt=""
           /> 
           <h1 className="ml-2 text-2xl font-semibold text-highlight">
             Filter
@@ -79,6 +82,7 @@ return (
           <img 
             className="w-10 h-8"
             src="/Mine.png"
+            alt=""
           /> 
           <h1 className="ml-2 text-2xl font-semibold text-highlight">
             Mine
@@ -95,6 +99,7 @@ return (
         <img 
             className="lg:w-1/2 mt-4 mx-auto outline-light rounded-lg"
             src="/mine-inverted.png"
+            alt="Mined data"
           /> 
       </div>
     </section>

@@ -13,7 +13,7 @@ export default function App() {
       <Navbar />
       <About />
       <Process />
-      <div className="h-20"> 
+      <div className="h-40"> 
       </div>
       <Insights />
       <Conclusion />
