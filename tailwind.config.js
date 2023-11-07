@@ -19,8 +19,8 @@ module.exports = {
       backgroundImage: {
         'purp': "url('/bg-darkened.png')"
       },
-    }
-    
+    },
+    safelist: ['animate-[fade-in-up_3s_ease-in-out]']
   },
   variants: {
     extend: {},
