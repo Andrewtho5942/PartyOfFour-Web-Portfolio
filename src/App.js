@@ -9,7 +9,7 @@ import Conclusion from "./components/Conclusion"
 
 export default function App() {
   return (
-    <main class = "bg-purp text-white">
+    <main className = "bg-purp text-white">
       <Navbar />
       <About />
       <Process />

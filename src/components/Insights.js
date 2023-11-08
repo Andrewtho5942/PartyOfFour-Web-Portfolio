@@ -1,10 +1,32 @@
 import { ChartBarIcon } from "@heroicons/react/solid";
 import React from "react";
+import {useEffect, useState, useRef} from "react";
+
+export function useIsVisible(ref) {
+  const [isIntersecting, setIntersecting] = useState(false);
+  useEffect(()=> {
+    const observer = new IntersectionObserver(([entry]) => {
+      setIntersecting(entry.isIntersecting)
+    }
+    );
+    observer.observe(ref.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, [ref]);
+  return isIntersecting;
+}
 
 export default function Insights() {
+  const ref1 = useRef();
+  const isVisible1 = useIsVisible(ref1);
+
+  const ref2 = useRef();
+  const isVisible2 = useIsVisible(ref2);
+
 return (
-<section id="insights" className="blur-lg text-gray-400 bg-gray-900 body-font">
-      <div className="container px-5 py-10 mx-auto text-center lg:px-40 w-3/4">
+<section id="insights" className="blur-lg text-gray-400 bg-back body-font">
+      <div className="container px-5 py-10 mx-auto text-center bg-gray-900 lg:px-40 lg:w-3/4 ">
         <div className="flex flex-col w-full mb-10">
           <ChartBarIcon className="mx-auto inline-block w-10 mb-4" />
           <h1 className="sm:text-4xl text-3xl font-semibold title-font mb-4 text-highlight">
@@ -15,6 +37,7 @@ return (
             relationship is between GPA and numerous factors at Purdue.
           </p>
         </div>
+        <div ref={ref1} className = {'transition-opacity ease-in duration-1000 ' + (isVisible1 ? 'opacity-100' : 'opacity-0')}> 
         <div className="flex flex-wrap -m-4">
           <img 
             className="outline-main w-2/3 mx-auto rounded-2xl"
@@ -27,7 +50,8 @@ return (
           Math has 7 of the lowest 10. This includes Calculus 1 - 3, as well as linear algebra, differential equations,
           and Plane Analytic Geometry & Calculus 1 & 2, which had the two lowest average GPAs out of all observations by a relatively large margin.
         </div>
-
+        </div>
+        <div ref={ref2} className = {'transition-opacity ease-in duration-1000 ' + (isVisible2 ? 'opacity-100' : 'opacity-0')}> 
         <div className="flex flex-wrap w-full ml-10">
           <img 
             className="outline-main lg:w-5/12 w-3/4 rounded-2xl mx-2 my-2"
@@ -45,6 +69,7 @@ return (
             Math is the subject with the lowest average GPA of 2.56, with a 0.24 gap between it and second place, Band. The two
              outliers with the highest GPA are Pharmacy and Nursing, which each have an average GPA of 3.69 and 3.72, respectively.
              These two subjects are also separated by a relatively large gap of 0.25 from third place, Aviation Technology.
+        </div>
         </div>
       </div>
       
