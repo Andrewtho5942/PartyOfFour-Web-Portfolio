@@ -10,7 +10,7 @@ return (
             alt="hero"
             src="./check.svg"
           />
-          <h1 className="sm:text-4xl text-3xl font-semibold title-font text-highlight-light mb-4">
+          <h1 className="sm:text-4xl text-3xl font-semibold title-font text-highlight mb-4">
             Conclusion
           </h1>
           <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">

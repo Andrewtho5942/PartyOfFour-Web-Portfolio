@@ -28,7 +28,7 @@ return (
 <section id="insights" className="blur-lg text-gray-400 bg-back body-font">
       <div className="container px-5 py-10 mx-auto text-center bg-gray-900 lg:px-40 lg:w-3/4 ">
         <div className="flex flex-col w-full mb-10">
-          <ChartBarIcon className="mx-auto inline-block w-10 mb-4" />
+          <ChartBarIcon className="mx-auto inline-block w-10 mb-4 text-white fill-current" />
           <h1 className="sm:text-4xl text-3xl font-semibold title-font mb-4 text-highlight">
             Visualizations & Insights
           </h1>

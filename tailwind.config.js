@@ -6,17 +6,17 @@ module.exports = {
     extend:{
       colors:{
         back: {
-          DEFAULT: '#170832'
+          DEFAULT: '#0c132a'
         },
         highlight: {
-            DEFAULT: '#a78bfa',
-            light: '#ddd6fe',
-            dark: '#8b5cf6'
+            DEFAULT: '#60a5fa',
+            light: '#bfdbfe',
+            dark: '#3b82f6'
         }
       },
       outline: {
-        main: '3px solid #a78bfa',
-        light: '2px solid #a78bfa'
+        main: '3px solid #60a5fa',
+        light: '2px solid #60a5fa'
         
       },
       backgroundImage: {
