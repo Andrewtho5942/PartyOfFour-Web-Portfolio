@@ -18,7 +18,7 @@ export function useIsVisible(ref) {
   return isIntersecting;
 }
 
-export default function Process() {
+export default function Process(darkMode) {
   const ref1 = useRef();
   const isVisible1 = useIsVisible(ref1);
 
@@ -30,12 +30,12 @@ export default function Process() {
 
   const ref4 = useRef();
   const isVisible4 = useIsVisible(ref4);
-
+  console.log(darkMode)
 return (
-<section id="process" className="blur-lg text-gray-200 bg-back body-font">
-      <div className="container px-5 py-10 mx-auto text-center lg:px-40 lg:w-3/4 bg-gray-900 rounded-3xl">
+  <section id="process" className="blur-lg dark:text-gray-200 text-black dark:bg-back-dark bg-back-light body-font">
+      <div className="container px-5 py-10 mx-auto text-center lg:px-40 lg:w-3/4 dark:bg-gray-900 bg-back-lightMid rounded-3xl">
         <div className="flex flex-col w-full mb-10">
-          <ClipboardListIcon className="mx-auto inline-block w-10 mb-4  text-white fill-current" />
+          <ClipboardListIcon className=" mx-auto inline-block w-10 mb-4 text-highlight-dark fill-current" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-highlight">
             Our Data Visualization Process
           </h1>
@@ -61,13 +61,10 @@ return (
             To acquire our dataset covering GPA distributions for a range of courses, subjects, terms, and professors, 
             we downloaded the data from a website called boilergrades.com, which was made available by a public records request.
           </p>
-          <img 
-            className="lg:w-full mt-4 mx-auto outline-light rounded-lg"
-            src="/acquire-inverted.png"
-            alt="Original acquired data"
-          /> 
+          
+          <img className="lg:w-full mt-4 mx-auto outline-light rounded-lg" src= {darkMode ? "/acquire-inverted.png" : "/AcquireUninverted.png"} alt="Original acquired data"/> 
         </div>
-        <ArrowNarrowDownIcon  className="mx-auto w-10 mt-2"/>
+        <ArrowNarrowDownIcon  className="text-highlight-dark mx-auto w-10 mt-2"/>
         <div ref={ref2} className = {'transition-opacity ease-in duration-1000 ' + (isVisible2 ? 'opacity-100' : 'opacity-0')}> 
         <div className="flex justify-center mt-6">
           <img 
@@ -90,7 +87,7 @@ return (
             alt="Parsed data"
           /> 
           </div>
-        <ArrowNarrowDownIcon  className="mx-auto w-10 mt-2"/>
+        <ArrowNarrowDownIcon  className="text-highlight-dark mx-auto w-10 mt-2"/>
         <div ref={ref3} className = {'transition-opacity ease-in duration-1000 ' + (isVisible3 ? 'opacity-100' : 'opacity-0')}> 
         <div className="flex justify-center mt-6">
           <img 
@@ -111,7 +108,7 @@ return (
           only the larger observations that we care about. 
         </p>
         </div>
-        <ArrowNarrowDownIcon  className="mx-auto w-10 mt-2"/>
+        <ArrowNarrowDownIcon  className="text-highlight-dark mx-auto w-10 mt-2"/>
         <div ref={ref4} className = {'transition-opacity ease-in duration-1000 ' + (isVisible4 ? 'opacity-100' : 'opacity-0')}> 
         <div className="flex justify-center mt-6">
           <img 

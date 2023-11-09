@@ -6,12 +6,14 @@ module.exports = {
     extend:{
       colors:{
         back: {
-          DEFAULT: '#000e1e'
+          dark: '#000e1e',
+          light: '#bfeaf7',
+          lightMid: '#f0f9ff'
         },
         highlight: {
             DEFAULT: '#60a5fa',
             light: '#bfdbfe',
-            dark: '#3b82f6'
+            dark: '#2563eb'
         }
       },
       outline: {
@@ -20,7 +22,8 @@ module.exports = {
         
       },
       backgroundImage: {
-        'darkbg': "url('/bg-darkened.png')"
+        'darkbg': "url('/bg-darkened.png')",
+        'lightbg': "url('/bg-lightened.png')"
       },
     },
     safelist: ['animate-[fade-in-up_3s_ease-in-out]']

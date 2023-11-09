@@ -25,7 +25,7 @@ return (
         
       </div>
         <div className="">
-          <h1 className="mx-auto p-8 bg-gray-900 opacity-80"> 
+          <h1 className="mx-auto p-8 dark:bg-gray-900 bg-gray-200 opacity-70 dark:text-white text-black"> 
             Made with React & Tailwind - Hosted by Netlify.
           </h1>
         </div>

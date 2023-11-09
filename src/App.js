@@ -9,13 +9,11 @@ import Conclusion from "./components/Conclusion"
 
 export default function App() {
   
-  const getMode = () => {
-    return JSON.parse(localStorage.getItem("mode")) || false
-  }
+  const [mode, setMode] = useState(true);
 
-  const [mode, setMode] = useState(getMode);
-
-  const changeMode = () => { setMode(!mode); }
+  const changeMode = () => { 
+    setMode(!mode);
+   }
 
   useEffect(() => {
     localStorage.setItem("mode", JSON.stringify(mode))
@@ -23,15 +21,13 @@ export default function App() {
 
   return (
     <main>
-      <div className = {mode ? "dark" : ""}> 
-        <div className = "bg-darkbg overscroll-none"> 
+      <div className = {mode ? "dark bg-darkbg" : "bg-lightbg"}> 
           <Navbar darkMode={mode} changeTheme={changeMode} />
           <About />
-          <Process />
+          <Process darkMode={mode}/>
           <div className="h-40"> </div>
           <Insights />
           <Conclusion />
-        </div>
       </div>
     </main>
   );

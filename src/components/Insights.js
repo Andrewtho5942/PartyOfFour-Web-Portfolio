@@ -25,14 +25,14 @@ export default function Insights() {
   const isVisible2 = useIsVisible(ref2);
 
 return (
-<section id="insights" className="blur-lg text-gray-400 bg-back body-font">
-      <div className="container px-5 py-10 mx-auto text-center bg-gray-900 lg:px-40 lg:w-3/4 rounded-3xl">
+<section id="insights" className="blur-lg dark:text-gray-400 text-black dark:bg-back-dark bg-back-light body-font">
+      <div className="container px-5 py-10 mx-auto text-center dark:bg-gray-900 bg-back-lightMid lg:px-40 lg:w-3/4 rounded-3xl">
         <div className="flex flex-col w-full mb-10">
-          <ChartBarIcon className="mx-auto inline-block w-10 mb-4 text-white fill-current" />
+          <ChartBarIcon className="mx-auto inline-block w-10 mb-4 text-highlight-dark fill-current" />
           <h1 className="sm:text-4xl text-3xl font-semibold title-font mb-4 text-highlight">
             Visualizations & Insights
           </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-white">
+          <p className="lg:w-2/3 mx-auto leading-relaxed dark:text-white text-black">
             This section serves to showcase the various visualizations that our group has created to give insight into what the 
             relationship is between GPA and numerous factors at Purdue.
           </p>
