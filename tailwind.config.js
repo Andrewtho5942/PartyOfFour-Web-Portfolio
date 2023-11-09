@@ -1,12 +1,12 @@
 
 module.exports = {
+  darkMode: 'class',
   content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend:{
       colors:{
         back: {
-          DEFAULT: '#0c132a'
+          DEFAULT: '#000e1e'
         },
         highlight: {
             DEFAULT: '#60a5fa',
@@ -20,7 +20,7 @@ module.exports = {
         
       },
       backgroundImage: {
-        'purp': "url('/bg-darkened.png')"
+        'darkbg': "url('/bg-darkened.png')"
       },
     },
     safelist: ['animate-[fade-in-up_3s_ease-in-out]']

@@ -23,9 +23,9 @@ return (
             &nbsp;&nbsp;&nbsp;&nbsp;This portfolio will show our group's many visualizations, insights, and our methods through the entire data visualization process.
           </div>
         </div>
-        <div className="rounded-3xl overflow-hidden lg:w-7/12  md:w-1/2 w-5/6 " >
+        <div className=" overflow-hidden lg:w-7/12  md:w-1/2 w-5/6" >
           <img
-            className="object-cover object-center rounded w-full"
+            className="outline-main rounded-3xl bg-blend-soft-light"
             alt="visualization"
             src="./visualization_example.png"
           />

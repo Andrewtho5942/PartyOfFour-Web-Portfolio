@@ -33,7 +33,7 @@ export default function Process() {
 
 return (
 <section id="process" className="blur-lg text-gray-200 bg-back body-font">
-      <div className="container px-5 py-10 mx-auto text-center lg:px-40 lg:w-3/4 bg-gray-900">
+      <div className="container px-5 py-10 mx-auto text-center lg:px-40 lg:w-3/4 bg-gray-900 rounded-3xl">
         <div className="flex flex-col w-full mb-10">
           <ClipboardListIcon className="mx-auto inline-block w-10 mb-4  text-white fill-current" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-highlight">
