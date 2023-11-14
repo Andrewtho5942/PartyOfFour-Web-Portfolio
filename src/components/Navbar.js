@@ -1,6 +1,8 @@
 import { ChevronLeftIcon } from "@heroicons/react/outline";
 import { ChevronRightIcon } from "@heroicons/react/outline";
 import React from "react";
+import { Link } from "react-router-dom";
+import { navItems } from "./navItems";
 
 export default function Navbar({darkMode, changeTheme}) {
 
@@ -24,28 +26,39 @@ export default function Navbar({darkMode, changeTheme}) {
           <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <a className="title-font font-medium mb-4 md:mb-0">
               
-              <a href="#about" className="ml-3 text-xl font-semibold text-highlight hover:text-highlight-dark">
+              <Link to="/" className="ml-3 text-xl font-semibold text-highlight hover:text-highlight-dark">
                 CGT270 - Party of Four
-              </a>
+              </Link>
             </a>
+
             <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 dark:text-white text-black md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-              <a href="#process" className="mr-5 hover:text-highlight">
-                Process
-              </a>
-              <a href="#insights" className="mr-5 hover:text-highlight">
-                Insights
-              </a>
-              <a href="#conclusion" className="mr-5 hover:text-highlight">
-                Conclusion
-              </a>
-              <a href="#conclusion" className="mr-5 md:border-l md:py-1 md:border-gray-700 md:pl-4  hover:text-highlight">
-                Essay & Video
-              </a>
-              <a href="#conclusion" className="mr-5 md:border-l md:py-1 md:border-gray-700 md:pl-4  hover:text-highlight">
-                Visualization Gallery
-              </a>
+            <ul className="nav-items flex list-none justify-center items-center w-3/4">
+              {navItems.map((item) => (
+                <li
+                className='group flex items-center text-gray-200 mx-6 font-semibold hover:text-white h-12'
+              >
+                <Link href={item.path}>{item.title}</Link>
+                
+                {item.children && (
+                  <ul className='group-hover:block hidden w-36 absolute list-none text-start top-12 bg-sky-300'>
+                    {item.children.map((dropDownItem) => (
+                      <li key={dropDownItem.id} className='text-white p-2 hover:bg-sky-400 cursor-pointer'>
+                        <Link
+                          href={dropDownItem.path}
+                          className='w-full block'
+                        >
+                          {dropDownItem.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+              ))}
+            </ul>
             </nav>
-                    <ChangeThemeButton className="text-3xl" />
+
+            <ChangeThemeButton className="text-3xl" />
             <a
               className="inline-flex items-center dark:text-white text-black dark:bg-gray-700 bg-gray-300 opacity-70 border-0 py-1 px-3 focus:outline-none rounded-3xl text-base mt-4 ml-10 md:mt-0">
               <ChevronLeftIcon className="w-4 h-4 mr-1 mt-1" />
@@ -57,3 +70,18 @@ export default function Navbar({darkMode, changeTheme}) {
     );
   
 }
+
+/*
+
+<Link to="/" className="mr-5 hover:text-highlight">
+                Home
+              </Link>
+              <Link to="/Writeup" className="mr-5 md:border-l md:py-1 md:border-gray-700 md:pl-4  hover:text-highlight">
+                Write-up & Video
+              </Link>
+              <Link to="/Gallery" className="mr-5 md:border-l md:py-1 md:border-gray-700 md:pl-4  hover:text-highlight">
+                Visualization Gallery
+              </Link>
+
+     
+*/
