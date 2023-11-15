@@ -1,10 +1,6 @@
 import React from "react";
 import {useState, useEffect} from "react"
-//import About from "./components/About";
 import Navbar from "./components/Navbar"
-//import Process from "./components/Process"
-//import Insights from "./components/Insights"
-//import Conclusion from "./components/Conclusion"
 import Main from "./components/Main"
 
 export default function App() {

@@ -153,7 +153,6 @@ return (
           <h1 className="ml-2 text-2xl font-semibold text-highlight">
             Mine
           </h1>
-          
         </div>
         <p className="mx-auto lg:w-full">
           Next, we mined the data by getting the sum of the population, and using this with

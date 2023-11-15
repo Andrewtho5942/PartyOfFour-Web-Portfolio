@@ -2,8 +2,6 @@ import { ChevronLeftIcon } from "@heroicons/react/outline";
 import { ChevronRightIcon } from "@heroicons/react/outline";
 import React from "react";
 import { Link } from "react-router-dom";
-import { navItems } from "./navItems";
-
 export default function Navbar({darkMode, changeTheme}) {
 
    // Button that enables/disables darkmode across pages.
@@ -32,30 +30,18 @@ export default function Navbar({darkMode, changeTheme}) {
             </a>
 
             <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 dark:text-white text-black md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-            <ul className="nav-items flex list-none justify-center items-center w-3/4">
-              {navItems.map((item) => (
-                <li
-                className='group flex items-center text-gray-200 mx-6 font-semibold hover:text-white h-12'
-              >
-                <Link href={item.path}>{item.title}</Link>
-                
-                {item.children && (
-                  <ul className='group-hover:block hidden w-36 absolute list-none text-start top-12 bg-sky-300'>
-                    {item.children.map((dropDownItem) => (
-                      <li key={dropDownItem.id} className='text-white p-2 hover:bg-sky-400 cursor-pointer'>
-                        <Link
-                          href={dropDownItem.path}
-                          className='w-full block'
-                        >
-                          {dropDownItem.title}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-              ))}
-            </ul>
+              <Link to="/" className="mr-5 hover:text-highlight">
+                Home
+              </Link>
+              <Link to="/Writeup" className="mr-5 md:border-l md:py-1 md:border-gray-700 md:pl-4  hover:text-highlight">
+                Write-up
+              </Link>
+              <Link to="/Video" className="mr-5 md:border-l md:py-1 md:border-gray-700 md:pl-4  hover:text-highlight">
+                Video
+              </Link>
+              <Link to="/Gallery" className="mr-5 md:border-l md:py-1 md:border-gray-700 md:pl-4  hover:text-highlight">
+                Visualization Gallery
+              </Link>
             </nav>
 
             <ChangeThemeButton className="text-3xl" />
@@ -73,15 +59,7 @@ export default function Navbar({darkMode, changeTheme}) {
 
 /*
 
-<Link to="/" className="mr-5 hover:text-highlight">
-                Home
-              </Link>
-              <Link to="/Writeup" className="mr-5 md:border-l md:py-1 md:border-gray-700 md:pl-4  hover:text-highlight">
-                Write-up & Video
-              </Link>
-              <Link to="/Gallery" className="mr-5 md:border-l md:py-1 md:border-gray-700 md:pl-4  hover:text-highlight">
-                Visualization Gallery
-              </Link>
+
 
      
 */
