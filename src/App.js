@@ -1,11 +1,11 @@
 import React from "react";
 import {useState, useEffect} from "react"
-import About from "./components/About";
-
+//import About from "./components/About";
 import Navbar from "./components/Navbar"
-import Process from "./components/Process"
-import Insights from "./components/Insights"
-import Conclusion from "./components/Conclusion"
+//import Process from "./components/Process"
+//import Insights from "./components/Insights"
+//import Conclusion from "./components/Conclusion"
+import Main from "./components/Main"
 
 export default function App() {
   
@@ -20,15 +20,10 @@ export default function App() {
   }, [mode])
 
   return (
-    <main>
-      <div className = {mode ? "dark bg-darkbg" : "bg-lightbg"}> 
-          <Navbar darkMode={mode} changeTheme={changeMode} />
-          <About />
-          <Process darkMode={mode}/>
-          <div className="h-40"> </div>
-          <Insights />
-          <Conclusion />
-      </div>
-    </main>
+    <div className = {mode ? "dark bg-darkbg" : "bg-lightbg"}> 
+        <Navbar darkMode={mode} changeTheme={changeMode} />
+        <Main />
+        
+    </div>
   );
 }
