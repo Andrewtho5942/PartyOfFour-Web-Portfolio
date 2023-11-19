@@ -18,7 +18,7 @@ export function useIsVisible(ref) {
   return isIntersecting;
 }
 
-export default function About(darkMode) {
+export default function About(prop) {
   const ref1 = useRef();
   const isVisible1 = useIsVisible(ref1);
 
@@ -95,8 +95,11 @@ return (
             To acquire our dataset covering GPA distributions for a range of courses, subjects, terms, and professors, 
             we downloaded the data from a website called boilergrades.com, which was made available by a public records request.
           </p>
-          
-          <img className="lg:w-full mt-4 mx-auto outline-light rounded-lg" src= {darkMode ? "/acquire-inverted.png" : "/AcquireUninverted.png"} alt="Original acquired data"/> 
+
+          <img className="lg:w-full mt-4 mx-auto outline-light rounded-lg" 
+          src= {prop.mode ? "/acquire-inverted.png" : "/AcquireUninverted.png"} 
+          alt="Original acquired data"/> 
+
         </div>
         <ArrowNarrowDownIcon  className="text-highlight-dark mx-auto w-10 mt-2"/>
         <div ref={ref2} className = {'transition-opacity ease-in duration-1000 ' + (isVisible2 ? 'opacity-100' : 'opacity-0')}> 
@@ -117,7 +120,7 @@ return (
         </p>
         <img 
             className="lg:w-full mt-4 mx-auto outline-light rounded-lg"
-            src="/ParseInverted.png"
+            src= {prop.mode ? "/ParseInverted.png" : "/ParseUninverted.png"} 
             alt="Parsed data"
           /> 
           </div>
@@ -163,7 +166,7 @@ return (
         </p>
         <img 
             className="lg:w-1/2 mt-4 mx-auto outline-light rounded-lg"
-            src="/mine-inverted.png"
+            src= {prop.mode ? "/mine-inverted.png" : "/MineUninverted.png"} 
             alt="Mined data"
           /> 
           </div>
@@ -243,13 +246,9 @@ return (
       </div>
         <div className="">
           <h1 className="mx-auto p-8 dark:bg-gray-900 bg-gray-200 opacity-70 dark:text-white text-black"> 
-            Made with React & Tailwind - Hosted by Netlify.
+            Built with React & Tailwind - Hosted by Netlify.
           </h1>
         </div>
-
-
-
-
     </section>
     
 );

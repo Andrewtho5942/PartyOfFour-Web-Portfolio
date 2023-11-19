@@ -18,8 +18,7 @@ export default function App() {
   return (
     <div className = {mode ? "dark bg-darkbg" : "bg-lightbg"}> 
         <Navbar darkMode={mode} changeTheme={changeMode} />
-        <Main />
-        
+        <Main mode={mode}/>
     </div>
   );
 }

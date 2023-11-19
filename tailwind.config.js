@@ -19,9 +19,7 @@ module.exports = {
       outline: {
         main: '3px solid #60a5fa',
         light: '2px solid #60a5fa'
-        
-      },
-      backgroundImage: {
+      }, backgroundImage: {
         'darkbg': "url('/bg-darkened.png')",
         'lightbg': "url('/bg-lightened.png')"
       },
