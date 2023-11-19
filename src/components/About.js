@@ -59,7 +59,7 @@ return (
         </div>
         <div className=" overflow-hidden lg:w-7/12  md:w-1/2 w-5/6" >
           <img
-            className="outline-main rounded-3xl bg-blend-soft-light"
+            className="outline-main rounded-3xl"
             alt="visualization"
             src="./visualization_example.png"
           />
