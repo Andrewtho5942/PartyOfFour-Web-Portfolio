@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function Writeup() {
-
     return (
     <section id="Writeup">   
         <div className="container mx-auto flex px-10 py-10 md:flex-row flex-col items-center">
@@ -10,7 +9,6 @@ export default function Writeup() {
                     <h1 className="title-font text-5xl mb-4 font-bold text-highlight">
                         Write-up
                     </h1>
-                    
                 </div>
                 <div className="lg:w-1/2 mx-auto my-5">
                     <img
@@ -19,7 +17,6 @@ export default function Writeup() {
                 src="./visualization_example.png"
                 />
                 </div>
-                
                     <h2 className="dark:bg-gray-800 bg-gray-100 opacity-70 p-4 pb-0 mb-4 rounded-xl w-full text-center dark:text-white text-black">
                         placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder 
                         placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder 

@@ -22,7 +22,7 @@ module.exports = {
       }, backgroundImage: {
         'darkbg': "url('/bg-darkened.png')",
         'lightbg': "url('/bg-lightened.png')"
-      },
+      }
     },
     safelist: ['animate-[fade-in-up_3s_ease-in-out]']
   },

@@ -49,6 +49,42 @@ export default function Gallery() {
                             alt="test"
                         />
                     </div>
+                    <div >
+                        <img className="outline-main rounded-3xl"
+                            src="./visualization_example.png"
+                            alt="test"
+                        />
+                    </div>
+                    <div >
+                        <img className="outline-main rounded-3xl"
+                            src="./visualization_example.png"
+                            alt="test"
+                        />
+                    </div>
+                    <div >
+                        <img className="outline-main rounded-3xl"
+                            src="./visualization_example.png"
+                            alt="test"
+                        />
+                    </div>
+                    <div >
+                        <img className="outline-main rounded-3xl"
+                            src="./visualization_example.png"
+                            alt="test"
+                        />
+                    </div>
+                    <div >
+                        <img className="outline-main rounded-3xl"
+                            src="./visualization_example.png"
+                            alt="test"
+                        />
+                    </div>
+                    <div >
+                        <img className="outline-main rounded-3xl"
+                            src="./visualization_example.png"
+                            alt="test"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
