@@ -46,6 +46,9 @@ export default function Navbar({darkMode, changeTheme}) {
               <Link to="/Gallery" className="mr-5 md:border-l md:py-1 md:border-gray-700 md:pl-4  hover:text-highlight">
                 Visualization Gallery
               </Link>
+              <Link to="/AboutUs" className="mr-5 md:border-l md:py-1 md:border-gray-700 md:pl-4  hover:text-highlight">
+                About Us
+              </Link>
             </nav>
 
             <ChangeThemeButton className="text-3xl" />
