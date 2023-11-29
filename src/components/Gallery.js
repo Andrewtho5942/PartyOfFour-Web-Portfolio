@@ -1,16 +1,24 @@
 import React from "react"
-//import { useState, useEffect } from "react";
 
 export default function Gallery(prop) {
     return (
     <section id="Gallery">   
         <div className="container mx-auto flex lg:px-5 py-10 w-full items-center">
             <div className="mx-auto lg:w-full w-full flex flex-col mb-16 items-center text-center">
-                <div className= "dark:bg-gray-800 bg-gray-100 opacity-70 p-4 pb-4 mb-8 rounded-xl w-full text-center">
+                <div className= "dark:bg-gray-800 bg-gray-100 opacity-70 p-4 pb-4 mb-6 rounded-xl w-full text-center">
                     <h1 className="title-font text-5xl font-bold text-highlight ">
                         Visualization Gallery
                     </h1>
                 </div>
+                <div className="dark:bg-gray-800 bg-gray-100 opacity-70 px-4 py-2 rounded-xl">
+                <p className="text-2xl font-bold dark:text-white text-black">
+                    Analysis of the GPA of Purdue Courses Over Time
+                </p>
+                <p className=" text-xl font-bold text-gray-400">
+                    Click the arrow in the top right to select a course or type in the name directly
+                </p>
+                </div>
+                
                 <iframe width="1150" height="425" frameborder="0"
                     className="mb-12 mt-4 rounded-xl outline-main"
                     src="https://onedrive.live.com/embed?resid=35F145B59F2BEC0E%21161312&authkey=%21ACvmc3Kr4OzJM2I&em=2&AllowTyping=True&ActiveCell='DropdownDashboard'!B2&Item='DropdownDashboard'!A2%3AB22&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True">
@@ -113,7 +121,7 @@ export default function Gallery(prop) {
                         />
                     </div>
                 </div>
-                <img className="outline-main rounded-3xl w-3/4 mt-8"
+                <img className="outline-main rounded-3xl lg:w-1/2 w-3/4 mt-8"
                             src="./visualizations/range.png"
                             alt="test"
                         />
