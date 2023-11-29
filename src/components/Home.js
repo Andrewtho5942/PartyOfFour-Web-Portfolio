@@ -42,10 +42,13 @@ return (
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
         <div className="lg:w-full md:w-2/3 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <div className= "dark:bg-gray-800 bg-gray-100 opacity-70 p-4 pb-0 mb-4 rounded-xl w-full text-center">
-            <h1 className="title-font text-5xl mb-4 font-bold text-highlight">
-            An Analysis of Purdue's GPA
+            <h1 className="title-font text-5xl mb-2 font-bold text-highlight">
+              Decoding Purdue
             </h1>
-            <p className="ml-8 mb-8 text-1xl leading-relaxed dark:text-white text-black">
+            <p className="mb-4 text-3xl leading-relaxed dark:text-white text-black text-center">
+              An Analysis of Purdue's GPA
+            </p>
+            <p className="text-center text-1xl leading-relaxed dark:text-white text-black">
               Andrew Thompson (CS & AI, Junior)&nbsp;&nbsp; • &nbsp;&nbsp;Sam Lau (Math & Stats, Senior) <br /> 
               Bryce Bogan (Stats, Sophomore)&nbsp;&nbsp; • &nbsp;&nbsp;Weichang Wang (DS & CS, Senior)
             </p>
@@ -215,7 +218,7 @@ return (
         </div>
         <div className="mt-8 lg:w-2/3 mx-auto mb-10">
             These bar charts compare the top 10 subjects (with 200 or more sections) with the highest GPA and the bottom 10 subjects with the lowest GPA.
-            Math is the subject with the lowest average GPA of 2.56, with a 0.24 gap between it and second place, Band. The two
+            Math is the subject with the lowest average GPA of 2.56, with a 0.14 gap between it and second place, Band. The two
              outliers with the highest GPA are Pharmacy and Nursing, which each have an average GPA of 3.69 and 3.72, respectively.
              These two subjects are also separated by a relatively large gap of 0.25 from third place, Aviation Technology.
         </div>
