@@ -13,7 +13,7 @@ export default function Main(prop) {
       <Route exact path='/' element={<Home mode={prop.mode}/>}></Route>
       <Route exact path='/Writeup' element={<Writeup/>}></Route>
       <Route exact path='/Video' element={<Video/>}></Route>
-      <Route exact path='/Gallery' element={<Gallery/>}></Route>
+      <Route exact path='/Gallery' element={<Gallery mode={prop.mode}/>}></Route>
       <Route exact path='/AboutUs' element={<AboutUs/>}></Route>
     </Routes>
   );

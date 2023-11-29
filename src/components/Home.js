@@ -18,7 +18,7 @@ export function useIsVisible(ref) {
   return isIntersecting;
 }
 
-export default function About(prop) {
+export default function Home(prop) {
   const ref1 = useRef();
   const isVisible1 = useIsVisible(ref1);
 
@@ -190,7 +190,7 @@ return (
         <div className="flex flex-wrap -m-4">
           <img 
             className="outline-main w-2/3 mx-auto rounded-2xl"
-            src="/LowestCourses.png"
+            src="/visualizations/lowest_cour.png"
             alt="Lowest 10 courses by GPA"
           />
         </div>
@@ -204,12 +204,12 @@ return (
         <div className="flex flex-wrap w-full ml-10">
           <img 
             className="outline-main lg:w-5/12 w-3/4 rounded-2xl mx-2 my-2"
-            src="/LowestSubjects.png"
+            src="/visualizations/lowest_sub.png"
             alt="Lowest 10 subjects by GPA"
           />
           <img 
             className="outline-main lg:w-5/12 w-3/4 rounded-2xl mx-2 my-2"
-            src="/HighestSubjects.png"
+            src="/visualizations/highest_sub.png"
             alt="Highest 10 subjects by GPA"
           />
         </div>
