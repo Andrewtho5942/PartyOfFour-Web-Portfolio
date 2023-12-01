@@ -169,7 +169,7 @@ return (
           </h1>
         </div>
         <p className="mx-auto lg:w-full">
-          Next, we mined the data by getting the sum of the population, and using this with
+          Next, we mined the data by getting the sum of the population and used this with
           the grade distribution to get an average GPA for each course. We then created multiple pivot
           tables to sum every section across each course and subject, as well as match up each professor
           with every class he or she teaches. These pivot tables were then used in the following stages of
@@ -348,7 +348,8 @@ return (
             Continue Reading
           </h1>
           <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto dark:text-white text-black">
-            If you would like to get an even more in-depth look at our work, feel free to visit the Write-up tab above.
+            If you would like to get an even more in-depth look at our work, feel free to visit the Write-up tab at the top of your screen. You can also visit the Video tab to
+            see our final presentation via youtube, or the Visualization Gallery tab to see all of our visualizations in one convenient location.
           </p>
         </div>
         <div className="h-32">
