@@ -20,13 +20,14 @@ export default function Gallery(prop) {
                 </div>
                 
                 <iframe width="1150" height="425" frameborder="0"
+                    title="Course Dashboard"
                     className="mb-12 mt-4 rounded-xl outline-main"
                     src="https://onedrive.live.com/embed?resid=35F145B59F2BEC0E%21161312&authkey=%21ACvmc3Kr4OzJM2I&em=2&AllowTyping=True&ActiveCell='DropdownDashboard'!B2&Item='DropdownDashboard'!A2%3AB22&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True">
                 </iframe>
                 <div className = " grid grid-cols-2 w-full gap-4 px-4 lg:space-x-6">
                     <div >
                         <img className="outline-main rounded-3xl"
-                            src="./visualizations/scatterplot.png"
+                            src={prop.mode ? "./visualizations/scatterplot_inverted.png" : "./visualizations/scatterplot.png"}
                             alt="test"
                         />
                     </div>
