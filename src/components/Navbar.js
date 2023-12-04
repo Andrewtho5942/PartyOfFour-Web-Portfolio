@@ -23,7 +23,7 @@ export default function Navbar({darkMode, changeTheme}) {
        )
    }
     return (
-        <header className="dark:bg-black bg-white backdrop-filter dark:backdrop-blur-md backdrop-blur-md dark:bg-opacity-40  bg-opacity-40 md:sticky top-0 z-10 ">
+        <header className="dark:bg-black bg-white backdrop-filter dark:backdrop-blur-sm backdrop-blur-sm dark:bg-opacity-40  bg-opacity-40 md:sticky top-0 z-10 ">
           
           <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <p className="title-font font-medium mb-4 md:mb-0">
