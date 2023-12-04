@@ -10,16 +10,12 @@ export default function Paper() {
                         Final Group Report Paper
                     </h1>
                 </div>
-                <div className="lg:w-1/2 mx-auto my-5">
-                    <img
-                className="outline-main rounded-3xl bg-blend-soft-light"
-                alt="visualization"
-                src="./visualization_example.png"
-                />
-                </div>
-                    <h2 className="dark:bg-gray-800 bg-gray-100 opacity-70 p-4 pb-0 mb-4 rounded-xl w-full text-center dark:text-white text-black">
-                       
-                    </h2>   
+                
+                <iframe 
+                src="https://purdue0-my.sharepoint.com/personal/bslau_purdue_edu/_layouts/15/Doc.aspx?sourcedoc={0d282cb5-1fa2-43c0-b8ec-ce9d3074b8dd}&amp;action=embedview" 
+                width="1000"
+                className="mx-auto h-screen"
+                 frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>  
             </div>
         </div>
     </section>
