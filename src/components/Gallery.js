@@ -28,104 +28,113 @@ export default function Gallery(prop) {
                     <div >
                         <img className="outline-main rounded-3xl"
                             src={prop.mode ? "./visualizations/scatterplot_inverted.png" : "./visualizations/scatterplot.png"}
-                            alt="test"
+                            alt="scatterplot"
                         />
                     </div>
                     <div >
                         <img className="outline-main rounded-3xl"
                             src= {prop.mode ? "./visualizations/gpatime_inverted.png" : "./visualizations/gpatime.png"}
-                            alt="test"
+                            alt="gpa over time"
                         />
                     </div>
                     <div >
                         <img className="outline-main rounded-3xl"
                             src="./visualizations/highest_cour.png"
-                            alt="test"
+                            alt="highest courses"
                         />
                     </div>
                     <div >
                         <img className="outline-main rounded-3xl"
                             src="./visualizations/lowest_cour.png"
-                            alt="test"
+                            alt="lowest courses"
                         />
                     </div>
                     <div >
                         <img className="outline-main rounded-3xl"
                             src="./visualizations/highest_sub.png"
-                            alt="test"
+                            alt="highest subjects"
                         />
                     </div>
                     <div >
                         <img className="outline-main rounded-3xl"
                             src="./visualizations/lowest_sub.png"
-                            alt="test"
+                            alt="lowest subjects"
                         />
                     </div>
                     <div >
                         <img className="outline-main rounded-3xl"
                             src= {prop.mode ? "./visualizations/highest_vis2_inverted.png" : "./visualizations/highest_vis2.png"}
-                            alt="test"
+                            alt="highest courses"
                         />
                     </div>
                     <div >
                         <img className="outline-main rounded-3xl"
                             src= {prop.mode ? "./visualizations/lowest_vis2_inverted.png" : "./visualizations/lowest_vis2.png"}
-                            alt="test"
+                            alt="lowest courses"
                         />
                     </div>
                     <div >
                         <img className="outline-main rounded-3xl"
                             src= {prop.mode ? "./visualizations/topcalc_inverted.png" : "./visualizations/topcalc.png"}
-                            alt="test"
+                            alt="top calc classes"
                         />
                     </div>
                     <div >
                         <img className="outline-main rounded-3xl"
                             src= {prop.mode ? "./visualizations/top4calc_inverted.png" : "./visualizations/top4calc.png"}
-                            alt="test"
+                            alt="percent As"
                         />
                     </div>
                     <div >
                         <img className="outline-main rounded-3xl"
                             src="./visualizations/planecalc2.png"
-                            alt="test"
+                            alt="plane calc 2"
                         />
                     </div>
                     <div >
                         <img className="outline-main rounded-3xl"
                             src="./visualizations/transideas.png"
-                            alt="test"
+                            alt="translating ideas"
                         />
                     </div>
                     <div >
                         <img className="outline-main rounded-3xl"
                             src="./visualizations/planecalc1.png"
-                            alt="test"
+                            alt="plane calc 1"
                         />
                     </div>
                     <div >
                         <img className="outline-main rounded-3xl"
                             src="./visualizations/sciencewriting.png"
-                            alt="test"
+                            alt="science & writing"
                         />
                     </div>
                     <div >
                         <img className="outline-main rounded-3xl"
                             src="./visualizations/appliedcalc2.png"
-                            alt="test"
+                            alt="applied calc 2"
                         />
                     </div>
                     <div >
                         <img className="outline-main rounded-3xl"
                             src="./visualizations/organicchem.png"
-                            alt="test"
+                            alt="organic chem"
+                        />
+                    </div>
+                    <div >
+                    <img className="outline-main rounded-3xl"
+                            src="./visualizations/range.png"
+                            alt="range"
+                        />
+                    </div>
+                    <div >
+                        <img className="outline-main rounded-3xl"
+                            src={prop.mode ? "./visualizations/Engl_GPA_Inverted.png" : "./visualizations/Engl_GPA.png"}
+                            alt="GPA of English Courses Over Time"
                         />
                     </div>
                 </div>
-                <img className="outline-main rounded-3xl lg:w-1/2 w-3/4 mt-8"
-                            src="./visualizations/range.png"
-                            alt="test"
-                        />
+                
                         
             </div>
         </div>
