@@ -37,8 +37,8 @@ export default function Navbar({darkMode, changeTheme}) {
               <Link to="/" className="mr-5 hover:text-highlight">
                 Home
               </Link>
-              <Link to="/Writeup" className="mr-5 md:border-l md:py-1 md:border-gray-700 md:pl-4  hover:text-highlight">
-                Write-up
+              <Link to="/Paper" className="mr-5 md:border-l md:py-1 md:border-gray-700 md:pl-4  hover:text-highlight">
+                Paper
               </Link>
               <Link to="/Video" className="mr-5 md:border-l md:py-1 md:border-gray-700 md:pl-4  hover:text-highlight">
                 Video
