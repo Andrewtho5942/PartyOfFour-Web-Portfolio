@@ -348,7 +348,7 @@ return (
             Continue Reading
           </h1>
           <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto dark:text-white text-black">
-            If you would like to get an even more in-depth look at our work, feel free to visit the Write-up tab at the top of your screen. You can also visit the Video tab to
+            If you would like to get an even more in-depth look at our work, feel free to visit the Paper tab at the top of your screen. You can also visit the Video tab to
             see our final presentation via youtube, or the Visualization Gallery tab to see all of our visualizations in one convenient location.
           </p>
         </div>
