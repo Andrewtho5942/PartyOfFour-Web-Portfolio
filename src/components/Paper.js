@@ -12,6 +12,7 @@ export default function Paper() {
                 </div>
                 
                 <iframe 
+                title="Final Group Report Paper"
                 src="https://purdue0-my.sharepoint.com/personal/bslau_purdue_edu/_layouts/15/Doc.aspx?sourcedoc={0d282cb5-1fa2-43c0-b8ec-ce9d3074b8dd}&amp;action=embedview" 
                 width="1000"
                 className="mx-auto h-screen"
