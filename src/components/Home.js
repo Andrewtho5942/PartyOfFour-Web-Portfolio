@@ -219,12 +219,12 @@ return (
         <div ref={ref5} className = {'transition-opacity ease-in duration-1000 ' + (isVisible5 ? 'opacity-100' : 'opacity-0')}> 
         <div className="flex flex-row my-8">
           <img 
-            className="outline-main w-full h-full my-auto rounded-2xl"
+            className="outline-main lg:w-2/3 w-full h-full my-auto rounded-2xl"
             src="/visualizations/lowest_cour.png"
             alt="Lowest 10 courses by GPA"
           />
 
-        <div className="lg:w-2/3 w-full ml-6 my-auto text-left">
+        <div className="w-full ml-6 my-auto text-left">
           This bar chart shows how out of all courses at Purdue with more than 100 sections, 
           Math has 7 of the lowest 10. This includes Calculus 1 - 3, as well as linear algebra, differential equations,
           and Plane Analytic Geometry & Calculus 1 & 2, which had the two lowest average GPAs out of all observations by a relatively large margin.
