@@ -219,7 +219,7 @@ return (
         <div ref={ref5} className = {'transition-opacity ease-in duration-1000 ' + (isVisible5 ? 'opacity-100' : 'opacity-0')}> 
         <div className="flex flex-row my-8">
           <img 
-            className="outline-main lg:w-2/3 w-full h-full my-auto rounded-2xl"
+            className="outline-main w-full h-full my-auto rounded-2xl"
             src="/visualizations/lowest_cour.png"
             alt="Lowest 10 courses by GPA"
           />
