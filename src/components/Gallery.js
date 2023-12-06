@@ -21,7 +21,7 @@ export default function Gallery(prop) {
                 
                 <iframe width="1150" height="425" frameborder="0"
                     title="Course Dashboard"
-                    className="my-4 rounded-xl outline-main"
+                    className="my-4 rounded-xl outline-main w-[64rem]"
                     src="https://onedrive.live.com/embed?resid=35F145B59F2BEC0E%21161312&authkey=%21ACvmc3Kr4OzJM2I&em=2&AllowTyping=True&ActiveCell='DropdownDashboard'!B2&Item='DropdownDashboard'!A2%3AB22&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True">
                 </iframe>
                 <img className="outline-main rounded-3xl lg:w-3/4 mb-12"
