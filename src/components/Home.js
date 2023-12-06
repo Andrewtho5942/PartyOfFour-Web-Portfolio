@@ -57,9 +57,9 @@ return (
             <p className="mb-4 text-3xl leading-relaxed dark:text-white text-black text-center">
               An Analysis of Purdue's GPA
             </p>
-            <p className="text-center text-1xl leading-relaxed dark:text-white text-black">
-              Andrew Thompson (CS & AI, Junior)&nbsp;&nbsp; • &nbsp;&nbsp;Sam Lau (Math & Stats, Senior) <br /> 
-              Bryce Bogan (Stats, Sophomore)&nbsp;&nbsp; • &nbsp;&nbsp;Weichang Wang (DS & CS, Senior)
+            <p className="text-center text-1xl leading-relaxed dark:text-white text-black pb-2">
+              Andrew Thompson (CS & DS, Junior)&nbsp;&nbsp; • &nbsp;&nbsp;Sam Lau (Math & Stats, Senior) <br /> 
+              Bryce Bogan (Stats, Sophomore)&nbsp;&nbsp; • &nbsp;&nbsp;Weichang Wang (CS & DS, Senior)
             </p>
           </div>
         
@@ -103,7 +103,7 @@ return (
           
         </div>
         
-          <p className="mx-auto lg:w-full">
+          <p className="mx-auto lg:w-3/4">
             To acquire our dataset covering GPA distributions for a range of courses, subjects, terms, and professors, 
             we downloaded the data from a website called boilergrades.com, which was made available by a public records request.
           </p>
@@ -125,7 +125,7 @@ return (
             Parse
           </h1>
         </div>
-        <p className="mx-auto lg:w-full">
+        <p className="mx-auto lg:w-3/4">
           To parse this dataset, we wrote out the datatype, format, and range of each variable. 
           In excel, the correct data format was selected for each column to make it more readable.
         </p>
@@ -148,7 +148,7 @@ return (
           </h1>
           
         </div>
-        <p className="mx-auto lg:w-full">
+        <p className="mx-auto lg:w-3/4">
           The data was then filtered to remove Pass/Fail courses that did not have a normal
           grade distribution, and any classes with a withdrawal rate greater than 80% were
           removed as well. Later in the process, the datasets for many visualizations also 
@@ -168,7 +168,7 @@ return (
             Mine
           </h1>
         </div>
-        <p className="mx-auto lg:w-full">
+        <p className="mx-auto lg:w-3/4">
           Next, we mined the data by getting the sum of the population and used this with
           the grade distribution to get an average GPA for each course. We then created multiple pivot
           tables to sum every section across each course and subject, as well as match up each professor
@@ -203,9 +203,9 @@ return (
         <div ref={ref7} className = {'transition-opacity ease-in duration-1000 ' + (isVisible7 ? 'opacity-100' : 'opacity-0')}> 
           <div className="flex flex-row my-8">
             <div className="my-auto text-left mr-6 lg:w-1/3 w-full">
-              This scatterplot compares the GPA of courses with the number of sections they have. Additionally, each course datapoint 
-              is labelled by its department. Most courses have fewer sections, with a particularly dense cluster around 3.25 GPA and e^(1.4) = 4 sections. <br/>
-              Both Science and Liberal Arts have clusters of courses with a high number of sections, however, Science's cluster has a lower GPA than the Liberal Arts cluster.
+              &nbsp;&nbsp;&nbsp;&nbsp; This scatterplot compares the GPA of courses with the number of sections they have. Additionally, each course datapoint 
+              is labelled by its department. Most courses have fewer sections, with a particularly dense cluster around 3.25 GPA and 1.4 log # of sections (which is about 4 sections). <br/>
+              &nbsp;&nbsp;&nbsp;&nbsp; Both Science and Liberal Arts have clusters of courses with a high number of sections, however, Science's cluster has a lower GPA than the Liberal Arts cluster.
             </div>
             <img className="outline-main rounded-3xl w-2/3 my-auto h-full"
               src= {prop.mode ? "./visualizations/scatterplot_inverted.png" : "./visualizations/scatterplot.png"}
@@ -348,8 +348,8 @@ return (
             Continue Reading
           </h1>
           <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto dark:text-white text-black">
-            If you would like to get an even more in-depth look at our work, feel free to visit the Paper tab at the top of your screen. You can also visit the Video tab to
-            see our final presentation via youtube, or the Visualization Gallery tab to see all of our visualizations in one convenient location.
+            If you would like to get an even more in-depth look at our work, feel free to visit the Paper tab at the top of the page. You can also visit the Video tab to
+            see our final presentation via youtube, or the Visualization Gallery tab to see all of our visualizations in one convenient location, along with an interactive dashboard.
           </p>
         </div>
         <div className="h-32">

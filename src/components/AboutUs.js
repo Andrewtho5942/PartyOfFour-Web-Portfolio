@@ -10,7 +10,7 @@ export default function AboutUs() {
                         About Us
                     </h1>
                 </div>
-                <div className="grid grid-cols-2 my-5 space-x-8 gap-4">
+                <div className="grid grid-cols-2 my-5 space-x-8 gap-8">
                 <div>
                     <img
                 className="outline-main rounded-3xl w-1/3 overflow-hidden mx-auto mb-4"
@@ -38,7 +38,7 @@ export default function AboutUs() {
                     Andrew Thompson
                 </h2>  
                 <h2 className="dark:bg-gray-800 bg-gray-100 opacity-70 py-4 lg:px-6 px-2 mb-4 rounded-xl lg:h-1/3 w-full text-left dark:text-white text-black">
-                <strong>Major:</strong> Computer Science and Artificial Intelligence <br/>
+                <strong>Major:</strong> Computer Science and Data Science <br/>
                     <strong>Year:</strong> Junior <br/>
                     <strong> Contributions:</strong> Website creation and data visualizations covering the GPA differences between subjects
                     </h2>   
