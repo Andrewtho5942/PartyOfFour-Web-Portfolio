@@ -17,7 +17,7 @@ export default function Video() {
                     title="yt-video"
                     className = "mx-auto w-full"
                     height="650" 
-                    src="https://www.youtube.com/embed/o-YBDTqX_ZU?si=YwE1QCtmpmw9c7Qy" 
+                    src="https://www.youtube.com/embed/vRdRXr_bXx8?si=QIlncqdn-SpPM1Mx" 
                     allow="fullscreen; web-share" 
                     >
                 </iframe>
