@@ -13,8 +13,8 @@ export default function Paper() {
                 
                 <iframe 
                 title="Final Group Report Paper"
-                src="https://purdue0-my.sharepoint.com/personal/bslau_purdue_edu/_layouts/15/Doc.aspx?sourcedoc={0d282cb5-1fa2-43c0-b8ec-ce9d3074b8dd}&amp;action=embedview" 
-                width="1000"
+                src="https://docs.google.com/document/d/e/2PACX-1vS3uqq-4t1A67GZ9wN2rxoigehGO4lKGU7tGULNtXa3s2zPhfhICyPOuGpKFIv2SLXTZzE6_tqk3s1I/pub?embedded=true"
+                width="830"
                 className="mx-auto h-screen"
                  frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>  
             </div>
