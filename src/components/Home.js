@@ -207,7 +207,7 @@ return (
               is labelled by its department. Most courses have fewer sections, with a particularly dense cluster around 3.25 GPA and e^(1.4) = 4 sections. <br/>
               Both Science and Liberal Arts have clusters of courses with a high number of sections, however, Science's cluster has a lower GPA than the Liberal Arts cluster.
             </div>
-            <img className="outline-main rounded-3xl w-4/5 my-auto h-full"
+            <img className="outline-main rounded-3xl w-2/3 my-auto h-full"
               src= {prop.mode ? "./visualizations/scatterplot_inverted.png" : "./visualizations/scatterplot.png"}
               alt="test"
             />
@@ -235,7 +235,7 @@ return (
 
         <div ref={ref8} className = {'transition-opacity ease-in duration-1000 ' + (isVisible8 ? 'opacity-100' : 'opacity-0')}> 
           <div className="flex flex-row my-8">
-          <div className="lg:w-2/3 w-full mr-6 my-auto text-left">
+          <div className="lg:w-1/2 w-full mr-6 my-auto text-left">
             This line graph shows the average GPA of math courses across all terms and years in our dataset. We can see usually 
             the average math GPA is slightly higher in fall than the other two terms. However, we can see an extreme peak in 
             Spring 2020. The average in fall and summer is also higher than other years. This may be related to the Covid pandemic, 
